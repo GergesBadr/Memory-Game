@@ -11,4 +11,4 @@ that have the following features:
 
 I hope you enjoy it, and feel free to copy or edit the code for you own use!
 
-Demo: 
+Demo: https://gergesbadr.github.io/Memory-Game/
