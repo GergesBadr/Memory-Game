@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <div class="moves">
+          <span>Total Moves: </span>
+          <span class="moves-value">0</span>
+        </div>
+        <div class="wrong">
+          <span>Wrong Attempts: </span>
+          <span class="wrong-value">0</span>
+        </div>
+      </div>
+      <div class="game">
+        <div class="card" data-content="dahlia">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/dahlia.png" alt="dahlia image" />
+          </div>
+        </div>
+        <div class="card" data-content="coffee">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/coffee.png" alt="coffee image" />
+          </div>
+        </div>
+        <div class="card" data-content="css">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/css-3.png" alt="css image" />
+          </div>
+        </div>
+        <div class="card" data-content="github">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/github.png" alt="github image" />
+          </div>
+        </div>
+        <div class="card" data-content="html">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/html-5.png" alt="html image" />
+          </div>
+        </div>
+        <div class="card" data-content="python">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/python.png" alt="python image" />
+          </div>
+        </div>
+        <div class="card" data-content="tips">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/tips.png" alt="tips image" />
+          </div>
+        </div>
+        <div class="card" data-content="startup">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/startup.png" alt="startup image" />
+          </div>
+        </div>
+        <div class="card" data-content="butterfly">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/butterfly.png" alt="butterfly image" />
+          </div>
+        </div>
+        <div class="card" data-content="github">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/github.png" alt="github image" />
+          </div>
+        </div>
+        <div class="card" data-content="dahlia">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/dahlia.png" alt="dahlia image" />
+          </div>
+        </div>
+        <div class="card" data-content="python">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/python.png" alt="python image" />
+          </div>
+        </div>
+        <div class="card" data-content="tips">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/tips.png" alt="tips image" />
+          </div>
+        </div>
+        <div class="card" data-content="startup">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/startup.png" alt="startup image" />
+          </div>
+        </div>
+        <div class="card" data-content="js">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/js.png" alt="js image" />
+          </div>
+        </div>
+        <div class="card" data-content="coffee">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/coffee.png" alt="coffee image" />
+          </div>
+        </div>
+        <div class="card" data-content="css">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/css-3.png" alt="css image" />
+          </div>
+        </div>
+        <div class="card" data-content="html">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/html-5.png" alt="html image" />
+          </div>
+        </div>
+        <div class="card" data-content="butterfly">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/butterfly.png" alt="butterfly image" />
+          </div>
+        </div>
+        <div class="card" data-content="js">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/js.png" alt="js image" />
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Created With <span> <i class="fa-solid fa-heart"></i> </span> by
+        <a href="https://wa.me/201156728649">Gerges Badr</a>
+      </div>
+    </div>
+    <div class="popup fail-popup">
+      <p>Sorry, You got 10 wrong attempts, don't give up!</p>
+      <span class="fail-span">Try Again</span>
+    </div>
+    <div class="popup success-popup">
+      <p>You finished the game, Well Played!</p>
+      <span class="success-span">Play again</span>
+    </div>
+    <div class="overlay"></div>
+    <audio src="audio/success.mp3" id="success" preload="auto"></audio>
+    <audio src="audio/fail.mp3" id="fail" preload="auto"></audio>
+    <audio
+      src="audio//fail-end-game.mp3"
+      id="fail-end-game"
+      preload="auto"
+    ></audio>
+    <audio
+      src="audio/success-end-game.mp3"
+      id="success-end-game"
+      preload="auto"
+    ></audio>
+    <script
+      src="https://kit.fontawesome.com/aa3db8010a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
