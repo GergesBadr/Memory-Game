@@ -23,6 +23,37 @@ cards.forEach((card, index) => {
   });
 });
 
+// Select level
+document.querySelector(
+  ".overlay"
+).style.height = `${document.documentElement.scrollHeight}px`;
+
+let selectLevelPopup = document.querySelector(".select-level");
+let levels = document.querySelectorAll(".levels span");
+
+levels.forEach((level) => {
+  level.addEventListener("click", (e) => {
+    let cardCount = parseInt(level.dataset.count);
+    for (let i = 0; i < cards.length; i++) {
+      if (i < cardCount) {
+        cards[i].style.display = "block";
+      } else {
+        cards[i].style.display = "none";
+      }
+    }
+    selectLevelPopup.remove();
+    document.querySelector(".overlay").style.height = "0";
+    cards.forEach((card) => {
+      card.classList.add("flipped");
+    });
+    setTimeout(() => {
+      cards.forEach((card) => {
+        card.classList.remove("flipped");
+      });
+    }, 1500);
+  });
+});
+
 // Filp cards function
 function flip(selectedCard) {
   selectedCard.classList.add("flipped");
@@ -92,6 +123,9 @@ function successPopup() {
     document.getElementById("success-end-game").play();
   }, 250);
   document.querySelector(".success-popup").style.display = "block";
+  document.querySelector(
+    ".overlay"
+  ).style.height = `${document.documentElement.scrollHeight}px`;
   document.querySelector(".success-span").addEventListener("click", () => {
     location.reload();
   });

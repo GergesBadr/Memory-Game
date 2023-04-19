@@ -14,6 +14,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="popup select-level">
+      <p>Choose level:</p>
+      <div class="levels">
+        <span class="easy" data-count="14">Easy</span>
+        <span class="medium" data-count="20">Medium</span>
+        <span class="hard" data-count="30">Hard</span>
+      </div>
+    </div>
+    <div class="popup fail-popup">
+      <p>Sorry, You got 10 wrong attempts, don't give up!</p>
+      <span class="fail-span">Try Again</span>
+    </div>
+    <div class="popup success-popup">
+      <p>You finished the game, Well Played!</p>
+      <span class="success-span">Play again</span>
+    </div>
     <div class="container">
       <div class="info">
         <div class="moves">
@@ -32,88 +48,16 @@
             <img src="Images/dahlia.png" alt="dahlia image" />
           </div>
         </div>
-        <div class="card" data-content="coffee">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/coffee.png" alt="coffee image" />
-          </div>
-        </div>
-        <div class="card" data-content="css">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/css-3.png" alt="css image" />
-          </div>
-        </div>
-        <div class="card" data-content="github">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/github.png" alt="github image" />
-          </div>
-        </div>
-        <div class="card" data-content="html">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/html-5.png" alt="html image" />
-          </div>
-        </div>
-        <div class="card" data-content="python">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/python.png" alt="python image" />
-          </div>
-        </div>
-        <div class="card" data-content="tips">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/tips.png" alt="tips image" />
-          </div>
-        </div>
-        <div class="card" data-content="startup">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/startup.png" alt="startup image" />
-          </div>
-        </div>
-        <div class="card" data-content="butterfly">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/butterfly.png" alt="butterfly image" />
-          </div>
-        </div>
-        <div class="card" data-content="github">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/github.png" alt="github image" />
-          </div>
-        </div>
         <div class="card" data-content="dahlia">
           <div class="face front"></div>
           <div class="face back">
             <img src="Images/dahlia.png" alt="dahlia image" />
           </div>
         </div>
-        <div class="card" data-content="python">
+        <div class="card" data-content="coffee">
           <div class="face front"></div>
           <div class="face back">
-            <img src="Images/python.png" alt="python image" />
-          </div>
-        </div>
-        <div class="card" data-content="tips">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/tips.png" alt="tips image" />
-          </div>
-        </div>
-        <div class="card" data-content="startup">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/startup.png" alt="startup image" />
-          </div>
-        </div>
-        <div class="card" data-content="js">
-          <div class="face front"></div>
-          <div class="face back">
-            <img src="Images/js.png" alt="js image" />
+            <img src="Images/coffee.png" alt="coffee image" />
           </div>
         </div>
         <div class="card" data-content="coffee">
@@ -128,10 +72,76 @@
             <img src="Images/css-3.png" alt="css image" />
           </div>
         </div>
+        <div class="card" data-content="css">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/css-3.png" alt="css image" />
+          </div>
+        </div>
+        <div class="card" data-content="github">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/github.png" alt="github image" />
+          </div>
+        </div>
+        <div class="card" data-content="github">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/github.png" alt="github image" />
+          </div>
+        </div>
         <div class="card" data-content="html">
           <div class="face front"></div>
           <div class="face back">
             <img src="Images/html-5.png" alt="html image" />
+          </div>
+        </div>
+        <div class="card" data-content="html">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/html-5.png" alt="html image" />
+          </div>
+        </div>
+        <div class="card" data-content="python">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/python.png" alt="python image" />
+          </div>
+        </div>
+        <div class="card" data-content="python">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/python.png" alt="python image" />
+          </div>
+        </div>
+        <div class="card" data-content="tips">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/tips.png" alt="tips image" />
+          </div>
+        </div>
+        <div class="card" data-content="tips">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/tips.png" alt="tips image" />
+          </div>
+        </div>
+        <div class="card" data-content="startup">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/startup.png" alt="startup image" />
+          </div>
+        </div>
+        <div class="card" data-content="startup">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/startup.png" alt="startup image" />
+          </div>
+        </div>
+        <div class="card" data-content="butterfly">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/butterfly.png" alt="butterfly image" />
           </div>
         </div>
         <div class="card" data-content="butterfly">
@@ -144,6 +154,72 @@
           <div class="face front"></div>
           <div class="face back">
             <img src="Images/js.png" alt="js image" />
+          </div>
+        </div>
+        <div class="card" data-content="js">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/js.png" alt="js image" />
+          </div>
+        </div>
+        <div class="card" data-content="apple">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/apple.png" alt="apple image" />
+          </div>
+        </div>
+        <div class="card" data-content="apple">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/apple.png" alt="apple image" />
+          </div>
+        </div>
+        <div class="card" data-content="fist">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/fist.png" alt="fist image" />
+          </div>
+        </div>
+        <div class="card" data-content="fist">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/fist.png" alt="fist image" />
+          </div>
+        </div>
+        <div class="card" data-content="planet">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/planet-earth.png" alt="planet image" />
+          </div>
+        </div>
+        <div class="card" data-content="planet">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/planet-earth.png" alt="planet image" />
+          </div>
+        </div>
+        <div class="card" data-content="violin">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/violin.png" alt="violin image" />
+          </div>
+        </div>
+        <div class="card" data-content="violin">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/violin.png" alt="violin image" />
+          </div>
+        </div>
+        <div class="card" data-content="watermelon">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/watermelon.png" alt="watermelon image" />
+          </div>
+        </div>
+        <div class="card" data-content="watermelon">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="Images/watermelon.png" alt="watermelon image" />
           </div>
         </div>
       </div>
@@ -151,14 +227,6 @@
         Created With <span> <i class="fa-solid fa-heart"></i> </span> by
         <a href="https://wa.me/201156728649">Gerges Badr</a>
       </div>
-    </div>
-    <div class="popup fail-popup">
-      <p>Sorry, You got 10 wrong attempts, don't give up!</p>
-      <span class="fail-span">Try Again</span>
-    </div>
-    <div class="popup success-popup">
-      <p>You finished the game, Well Played!</p>
-      <span class="success-span">Play again</span>
     </div>
     <div class="overlay"></div>
     <audio src="audio/success.mp3" id="success" preload="auto"></audio>
