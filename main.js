@@ -51,6 +51,7 @@ levels.forEach((level) => {
         card.classList.remove("flipped");
       });
     }, 1500);
+    localStorage.setItem(`level`, `${parseInt(level.dataset.count)}`);
   });
 });
 
@@ -99,7 +100,7 @@ function matchedCards(firstCard, secondCard) {
   }
   // Handle success
   let matchedCards = document.querySelectorAll(".matched").length;
-  if (matchedCards === 20) {
+  if (matchedCards == localStorage.getItem("level")) {
     successPopup();
   }
 }
