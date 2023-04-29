@@ -12,5 +12,3 @@ that have the following features:
 - Shuffle the cards photos every time played.
 
 I hope you enjoy it, feel free to copy or edit the code for you own use!
-
-Demo: https://gergesbadr.github.io/Memory-Game/
